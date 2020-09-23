@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="menu">
+    <nav class="menu__nav">
+      <ul class="menu__nav--list">
+        <li class="menu__nav--list__item"><a href="#proyects">My proyects</a></li>
+        <li class="menu__nav--list__item"><a href="#aboutMe">About me</a></li>
+        <li class="menu__nav--list__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="modal">
+      <div class="modal-container">
+        <center>
+          <div class="material-icons cancel" id="cancel">cancel</div>
+          <h1 id="title">TITLE</h1>
+          <hr>
+          <img id="img" src="" alt="modal-img">
+        </center>
+      </div>
+    </div>
+    <center class="hero">
+      <figure class="hero__profile">
+        <img class="hero__profile--img" src="images/derekismy.jpeg" alt="Derek Paúl Imágen">
+        <figcaption class="hero__profile--desc">Derek Samuel Paúl Peña</figcaption>
+        <a href=""><i class="material-icons">facebook</i></a>
+        <a href=""><i class="material-icons">email</i></a>
+        <a href=""><i class="material-icons">more_vert</i></a>
+      </figure>
+      <img class="hero__wafe" src="images/Vector 1 (1).png" alt="vector 1">
+    </center>
+    <div class="description" id="aboutMe">
+      <p class="description--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit, sapiente accusamus eos deleniti dolorum blanditiis tempore nobis asperiores quas cum consectetur animi, porro dicta iste ab aperiam eveniet culpa?
+      Doloribus nemo neque vero illum ratione nam expedita, tempora dolorem suscipit labore, quibusdam nihil quas! Maxime modi molestias repellat? In perferendis natus incidunt ipsam quae dolor numquam porro esse reiciendis!
+      Unde eveniet tempora ullam ex a reprehenderit suscipit quo molestiae repellat nulla natus consectetur odit non ratione voluptatibus laudantium perspiciatis dignissimos voluptate ipsam dolore magnam soluta, autem neque? Id, molestias!</p>
+      <span class="description__icon">
+        <i class="material-icons md-18">announcement</i>
+      </span>
+    </div>
+    <section class="carrousel" id="proyects">
+      <div class="arrow-left">
+        <i class="material-icons md-18">keyboard_arrow_left</i>
+      </div>
+      <div class="content">
+        <figure class="content__figure" >
+          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-17 16-39-31.png" alt="Google - clone">
+        </figure>
+        <figure class="content__figure" >
+          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-18 15-45-47.png" alt="Super">
+        </figure>
+        <figure class="content__figure" >
+          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-19 15-43-27.png" alt="Inputs form">
+        </figure>
+        <figure class="content__figure" >
+          <img class="content__figure--img" src="images/RESCUE.png" alt="Rescue data base">
+        </figure>
+        <figure class="content__figure" >
+          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-21 18-55-43.png" alt="Play videos">
+        </figure>
+      </div>
+      <div class="arrow-right">
+        <i class="material-icons md-18">keyboard_arrow_right</i>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact" id="contact">
+      <center>
+        <h1>Contact</h1>
+        <form action="" class="form">
+          <label for="name">
+            Your name:
+            <input id="name" type="text" name="name">
+          </label>
+          <label for="email">
+            Your G-mail:
+            <input id="email" type="email" name="email">
+          </label>
+          <label for="content">
+            Your message:
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+          </label>
+        </form>
+      </center>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
