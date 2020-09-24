@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My profile (Derek)">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 800px)">
   <title>Portfolio</title>
 </head>
 <body>
-  <header class="menu">
+  <header class="menu" id="menu">
     <nav class="menu__nav">
       <ul class="menu__nav--list">
         <li class="menu__nav--list__item"><a href="#proyects">My proyects</a></li>
@@ -28,6 +30,9 @@
         </center>
       </div>
     </div>
+    <a href="#menu" class="return">
+      <div class="material-icons">keyboard_arrow_up</div>
+    </a>
     <center class="hero">
       <figure class="hero__profile">
         <img class="hero__profile--img" src="images/derekismy.jpeg" alt="Derek Paúl Imágen">
@@ -47,10 +52,18 @@
       </span>
     </div>
     <section class="carrousel" id="proyects">
-      <div class="arrow-left">
+      <button class="arrow-left not-allowed" disabled>
         <i class="material-icons md-18">keyboard_arrow_left</i>
-      </div>
+      </button>
       <div class="content">
+        <div class="table">
+          <span>
+            MY PROYECTS
+            <div>
+              (Click me)
+            </div>
+          </span>
+        </div>
         <figure class="content__figure" >
           <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-17 16-39-31.png" alt="Google - clone">
         </figure>
@@ -67,9 +80,9 @@
           <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-21 18-55-43.png" alt="Play videos">
         </figure>
       </div>
-      <div class="arrow-right">
+      <button class="arrow-right not-allowed" disabled>
         <i class="material-icons md-18">keyboard_arrow_right</i>
-      </div>
+      </button>
     </section>
   </main>
   <footer>

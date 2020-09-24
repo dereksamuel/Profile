@@ -1,0 +1,52 @@
+/* .arrow-left {
+  left: calc(100vw - 54%);
+  top: -32px;
+  transform: rotate(90deg);
+  height: 66px;
+} */
+
+.arrow-right, .arrow-left {
+  display: none;
+  /* right: calc(100vw - 50vw);
+  top: 466px;
+  transform: rotate(90deg);
+  height: 66px; */
+}
+
+.content {
+  display: block;
+  overflow: auto;
+}
+
+.modal-container img {
+  max-width: 100%;
+}
+
+.description {
+  max-width: 100%;
+  display: block;
+}
+
+.description span {
+  margin: 15px auto;
+  width: 52px;
+  display: flex;
+}
+
+.hero__wafe {
+  width: 100%;
+  /* height: 445px; */
+  margin-top: -121%;
+}
+
+.form label {
+  width: 90%;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+.menu__nav--list {
+  font-size: 1rem;
+}
