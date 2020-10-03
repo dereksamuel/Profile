@@ -31,7 +31,8 @@
           </div>
           <hr>
           <img id="img" src="" alt="modal-img">
-          <button class="btn" id="button-cancel">Close</button>
+          <p class="description-modal"></p>
+          <a href="#" target="__blank" class="link-a"><button style="width: 100%;" class="btn" id="button-cancel">LINK</button></a>
         </center>
       </div>
     </div>
@@ -80,26 +81,32 @@
       </span>
     </section>
     <section class="carrousel" id="proyects">
-      <button class="arrow-left not-allowed" aria-label="carrousel button - BACKGWARD" disabled>
+      <button class="arrow-left not-allowed" aria-label="carrousel button - BACKGWARD">
         <i class="material-icons md-18">keyboard_arrow_left</i>
       </button>
       <div class="content">
-        <div class="table">
+        <!-- <div class="table">
           <span>
             MY PROYECTS
             <div>
               (Click me)
             </div>
           </span>
-        </div>
+        </div> -->
         <button class="unvisible" id="one">
           <figure class="content__figure">
-            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-17 16-39-31.png" alt="Google - clone">
+            <img class="content__figure--img"
+              src="images/Captura de pantalla de 2020-09-17 16-39-31.png"
+              alt="Google - clone"
+              data-link="https://dereksamuel.github.io/Google-Clone/"
+              data-desc="Un clone de Google con funcionalidades del mismo.
+              Fue hecho con las principales técnicas que usa google para la construcción de
+              su aplicación">
           </figure>
         </button>
         <button class="unvisible" id="two">
           <figure class="content__figure">
-            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-18 15-45-47.png" alt="Super">
+            <img class="content__figure--img" data-link="https://dereksamuel.github.io/SIMON-DICE/" src="images/simonDice.png" alt="Simón Dice" data-desc="Es un juego básico implementado con HTML 5, CSS 3 y con JS">
           </figure>
         </button>
         <button class="unvisible" id="three" tabindex="-1">
@@ -114,11 +121,16 @@
         </button>
         <button class="unvisible" id="five" tabindex="-1">
           <figure aria-hidden="false" class="content__figure" id="5">
-            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-21 18-55-43.png" alt="Play videos">
+            <img
+              class="content__figure--img"
+              src="images/invie.png"
+              alt="Invie"
+              data-link="https://invie-aad48.web.app/"
+              data-desc="Con los siguientes easter eggs que podrá correr en el teclado, la página cambiará: invie, goback">
           </figure>
         </button>
       </div>
-      <button class="arrow-right not-allowed" aria-label="carrousel button FORWARD" disabled>
+      <button class="arrow-right not-allowed" aria-label="carrousel button FORWARD">
         <i class="material-icons md-18">keyboard_arrow_right</i>
       </button>
     </section>

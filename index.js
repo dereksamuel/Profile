@@ -13,6 +13,8 @@ const $image = document.querySelectorAll('.unvisible');
 const $img = document.querySelector('#img');
 const $title = document.querySelector('#title');
 const $idTitle = document.getElementById('header-title');
+const $description = document.querySelector('.description-modal');
+const $link_a = document.querySelector('.link-a');
 
 // TO HERO
 const $wafe = document.querySelector('.hero__wafe');
@@ -32,10 +34,6 @@ const options = {
 const observer = new IntersectionObserver(cb, options);
 
 observer.observe($wafe);
-
-window.addEventListener('load', () => {
-  $carrousel.style = "overflow: hidden;";
-});
 
 document.body.addEventListener('keyup', e => {
   if (e.key === 'Escape') {
@@ -79,9 +77,10 @@ $cancel.addEventListener('click', (e) => {
   $modal.classList.remove('modal-active');
 });
 
-$button_cancel.addEventListener('click', e => {
-  $modal.classList.remove('modal-active');
-});
+// $button_cancel.addEventListener('click', e => {
+//   $modal.classList.remove('modal-active');
+
+// });
 
 $contact.addEventListener('click', e => {
   $number.classList.toggle('visible-return');
@@ -93,19 +92,20 @@ $image.forEach(item => {
     $modalContainer.style = "display: inherit;";
     $title.textContent = imgByItem.alt;
     $img.setAttribute('src', imgByItem.currentSrc);
+    $description.textContent = e.toElement.dataset.desc;
+    $link_a.setAttribute('href', e.toElement.dataset.link);
     $modal.classList.add('modal-active');
     $idTitle.focus();
   });
 });
 
-$table.addEventListener('click', e => {
-  $carrousel.style = "overflow: auto;";
-  $table.classList.add('table-fade');
-  $arrowRight.classList.remove('not-allowed');
-  $arrowRight.removeAttribute('disabled');
-  $arrowLeft.classList.remove('not-allowed');
-  $arrowLeft.removeAttribute('disabled');
-});
+// $table.addEventListener('click', e => {
+//   $table.classList.add('table-fade');
+//   $arrowRight.classList.remove('not-allowed');
+//   $arrowRight.removeAttribute('disabled');
+//   $arrowLeft.classList.remove('not-allowed');
+//   $arrowLeft.removeAttribute('disabled');
+// });
 
 function visibleClone() {
   document.querySelector('#one').removeAttribute('tabindex');

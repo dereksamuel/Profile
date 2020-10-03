@@ -15,8 +15,17 @@
 
 .content {
   margin: 80px 70px;
-  display: block;
+  flex-direction: column;
   overflow: auto;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  border-radius: 0;
+  width: 100%;
 }
 
 .modal-container img {
