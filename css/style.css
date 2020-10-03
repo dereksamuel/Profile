@@ -7,15 +7,39 @@
 
 :root {
   --base-color: #FF7043;
+  --base-color-bordered: #3f5cb4;
+  --large-font-size: 2rem;
+  --box-commun: 0px 0px 16px 2px var(--base-color);
 }
 
 hmtl {
-  font-size: 62.8%;
+  font-size: 60%;
 }
 
 a {
   color: #0f0f0f;
   text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--base-color);
+  text-decoration: underline;
+}
+
+/* nav:focus-within {
+  border: 2px dashed var(--base-color);
+} */
+
+.description article {
+  text-align: center;
+}
+
+.description article h2 {
+  margin: 15px;
+}
+
+.material-icons.md-24 {
+  font-size: var(--large-font-size);
 }
 
 .menu__nav--list {
@@ -29,7 +53,7 @@ a {
 input[type="submit"] {
   cursor: pointer;
   width: 350px;
-  background-color: #FF7043;
+  background-color: var(--base-color);
   border-radius: 25px;
   font-weight: bold;
   outline: none;
@@ -72,11 +96,34 @@ input[type="submit"] {
 .description {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 80px;
   padding: 15px;
   background-color: var(--base-color);
   border-radius: 0px 25px 25px 0px;
   max-width: 50%;
+}
+
+.hero__nav--list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.hero__nav--list__item {
+  margin: 10px;
+  cursor: pointer;
+}
+
+#header-title {
+  background: none;
+  border: none;
+}
+
+#header-title:focus {
+  outline: none;
+  border-radius: 50%;
+  border: 3px solid var(--base-color);
+  box-shadow: var(--box-commun);
 }
 
 .description__icon {
@@ -108,8 +155,19 @@ input[type="submit"] {
   border-radius: 25px;
   font-weight: bold;
   color: aliceblue;
-  background-color: #1b1b1b;
+  background-color: #111111;
   border: 2px solid white;
+}
+
+.arrow-left:focus, .arrow-right:focus {
+  background-color: #1f1f1f;
+  box-shadow: var(--box-commun);
+  border: 2px solid var(--base-color);
+}
+
+.unvisible {
+  border: none;
+  background: none;
 }
 
 .arrow-right {
@@ -127,16 +185,16 @@ input[type="submit"] {
   z-index: 10;
   top: calc(90% - 50%);
   color: white;
-  background-color: #2e2e2e;
+  background-color: #111111;
   border: 2px solid white;
 }
 
 .arrow-left:hover, .arrow-right:hover {
-  background-color: #0f0f0f;
+  background-color: #202020;
 }
 
 .arrow-left:active, .arrow-right:active {
-  background-color: #424242;
+  background-color: #272727;
 }
 
 .carrousel {
@@ -149,10 +207,10 @@ input[type="submit"] {
   position: relative;
   background-color: #1b1b1b;
   overflow: hidden;
-  border: 20px solid #3f5cb4;
+  border: 20px solid var(--base-color-bordered);
   border-radius: 20px;
   display: flex;
-  margin-top: 100px;
+  margin-top: 80px;
   max-height: 500px;
   scroll-behavior: smooth;
 }
@@ -204,6 +262,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+/* #contact:hover {
+  color: var(--base-color);
+} */
+
 .modal-container {
   display: none;
   padding: 25px;
@@ -222,7 +284,7 @@ input[type="submit"] {
 }
 
 .contact {
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 15px;
   background-color: #1b1b1b;
   color: white;
@@ -247,6 +309,17 @@ input[type="submit"] {
   border-radius: 15px;
 }
 
+.form label input:focus, .form textarea:focus {
+  border: 2px solid var(--base-color);
+  box-shadow: var(--box-commun);
+}
+
+input[type="submit"]:focus {
+  background: white;
+  color: #D84315;
+  box-shadow: var(--box-commun);
+}
+
 textarea {
   min-width: 100%;
   max-width: 100%;
@@ -261,7 +334,7 @@ textarea {
   position: fixed;
   padding: 10px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--large-font-size);
   bottom: 0;
   right: 0;
   z-index: 15;
@@ -275,14 +348,18 @@ textarea {
   width: 100%;
   height: 100%;
   background-color: #0f0f0f;
-  color: #5f5f5f;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--large-font-size);
   position: absolute;
 }
 
 .table span {
+  color: #5f5f5f;
   text-align: center;
+}
+
+.number {
+  display: none;
 }
 
 .visible-return {
@@ -296,6 +373,41 @@ textarea {
 
 .table-fade {
   animation: fadeSkew 1s ease forwards;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 21px;
+  display: block;
+  background-color: var(--base-color);
+  border-radius: 25px;
+  font-weight: bold;
+  outline: none;
+  color: #0f0f0f;
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.notify-me {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: -2px;
+  background-color: #6a87dfe1;
+  color: #142635;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 20;
+  max-width: 350px;
+}
+
+.btn:focus {
+  background: white;
+  color: #D84315;
+  box-shadow: var(--box-commun);
 }
 
 @keyframes fadeIn {

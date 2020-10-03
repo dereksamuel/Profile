@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 800px)">
+  <link rel="stylesheet" href="css/responsive-2.css" media="screen and (max-width: 600px)">
   <title>Portfolio</title>
 </head>
 <body>
+  <!-- <a href="#main" class="skip-link">Saltar al contenido</a> -->
   <header class="menu" id="menu">
     <nav class="menu__nav">
       <ul class="menu__nav--list">
         <li class="menu__nav--list__item"><a href="#proyects">My proyects</a></li>
         <li class="menu__nav--list__item"><a href="#aboutMe">About me</a></li>
-        <li class="menu__nav--list__item"><a href="#contact">Contact</a></li>
+        <li class="menu__nav--list__item"><a href="#contactForm">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -23,36 +25,62 @@
     <div class="modal">
       <div class="modal-container">
         <center>
-          <div class="material-icons cancel" id="cancel">cancel</div>
-          <h1 id="title">TITLE</h1>
+          <button id="header-title" class="material-icons cancel" id="cancel" tabindex="0">cancel</button>
+          <div>
+            <h1 id="title">TITLE</h1>
+          </div>
           <hr>
           <img id="img" src="" alt="modal-img">
+          <button class="btn" id="button-cancel">Close</button>
         </center>
       </div>
+    </div>
+    <div class="notify-me" aria-live="assertive">
+      <p>Very good! you have send your message successfully</p>
     </div>
     <a href="#menu" class="return">
       <div class="material-icons">keyboard_arrow_up</div>
     </a>
-    <center class="hero">
-      <figure class="hero__profile">
-        <img class="hero__profile--img" src="images/derekismy.jpeg" alt="Derek Paúl Imágen">
-        <figcaption class="hero__profile--desc">Derek Samuel Paúl Peña</figcaption>
-        <a href=""><i class="material-icons">facebook</i></a>
-        <a href=""><i class="material-icons">email</i></a>
-        <a href=""><i class="material-icons">more_vert</i></a>
-      </figure>
-      <img class="hero__wafe" src="images/Vector 1 (1).png" alt="vector 1">
-    </center>
-    <div class="description" id="aboutMe">
-      <p class="description--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit, sapiente accusamus eos deleniti dolorum blanditiis tempore nobis asperiores quas cum consectetur animi, porro dicta iste ab aperiam eveniet culpa?
-      Doloribus nemo neque vero illum ratione nam expedita, tempora dolorem suscipit labore, quibusdam nihil quas! Maxime modi molestias repellat? In perferendis natus incidunt ipsam quae dolor numquam porro esse reiciendis!
-      Unde eveniet tempora ullam ex a reprehenderit suscipit quo molestiae repellat nulla natus consectetur odit non ratione voluptatibus laudantium perspiciatis dignissimos voluptate ipsam dolore magnam soluta, autem neque? Id, molestias!</p>
+    <section id="hero">
+      <center class="hero">
+        <figure class="hero__profile">
+          <img class="hero__profile--img" src="images/derekismy.jpeg" alt="Derek Paúl Imágen">
+          <figcaption class="hero__profile--desc">Derek Samuel Paúl Peña</figcaption>
+          <nav class="hero__nav">
+            <ul class="hero__nav--list">
+              <li class="hero__nav--list__item">
+                <a href="https://www.facebook.com/Dereksamuelgr/" rel="noopener" target="_blank" title="facebook">
+                  <i class="material-icons md-24">facebook</i>
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <!-- <li class="hero__nav--list__item"><a href="#" title="G-mail"><i class="material-icons md-24">email</i></a></li> -->
+              <li id="contact" class="hero__nav--list__item">
+                <i class="material-icons md-24">contact_phone</i>
+                <p>Number</p>
+              </li>
+            </ul>
+          </nav>
+          <p id="number" class="number">
+            <strong>57+ 200 24 53</strong>
+          </p>
+        </figure>
+        <img class="hero__wafe" src="images/Vector 1 (1).png" alt="vector 1">
+      </center>
+    </section>
+    <section class="description" id="aboutMe">
+      <article>
+        <p class="description--text">Hi! My name is Derek, I am full stack developer and I'm from Colombia. Since I knew the programming, I'v always had a fascination for make web apps.
+          I am looking for a part time schedule and I would like to offer these services. I am seventeen years old; I don't have experience for these topics, however I have good knowledge. Thanks for your atention.
+        </p>
+        <h2>ABOUT ME</h2>
+      </article>
       <span class="description__icon">
         <i class="material-icons md-18">announcement</i>
       </span>
-    </div>
+    </section>
     <section class="carrousel" id="proyects">
-      <button class="arrow-left not-allowed" disabled>
+      <button class="arrow-left not-allowed" aria-label="carrousel button - BACKGWARD" disabled>
         <i class="material-icons md-18">keyboard_arrow_left</i>
       </button>
       <div class="content">
@@ -64,43 +92,55 @@
             </div>
           </span>
         </div>
-        <figure class="content__figure" >
-          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-17 16-39-31.png" alt="Google - clone">
-        </figure>
-        <figure class="content__figure" >
-          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-18 15-45-47.png" alt="Super">
-        </figure>
-        <figure class="content__figure" >
-          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-19 15-43-27.png" alt="Inputs form">
-        </figure>
-        <figure class="content__figure" >
-          <img class="content__figure--img" src="images/RESCUE.png" alt="Rescue data base">
-        </figure>
-        <figure class="content__figure" >
-          <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-21 18-55-43.png" alt="Play videos">
-        </figure>
+        <button class="unvisible" id="one">
+          <figure class="content__figure">
+            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-17 16-39-31.png" alt="Google - clone">
+          </figure>
+        </button>
+        <button class="unvisible" id="two">
+          <figure class="content__figure">
+            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-18 15-45-47.png" alt="Super">
+          </figure>
+        </button>
+        <button class="unvisible" id="three" tabindex="-1">
+          <figure aria-hidden="false" class="content__figure">
+            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-19 15-43-27.png" alt="Inputs form">
+          </figure>
+        </button>
+        <button class="unvisible" id="four" tabindex="-1">
+          <figure aria-hidden="false"  class="content__figure" id="4">
+            <img class="content__figure--img" src="images/RESCUE.png" alt="Rescue data base">
+          </figure>
+        </button>
+        <button class="unvisible" id="five" tabindex="-1">
+          <figure aria-hidden="false" class="content__figure" id="5">
+            <img class="content__figure--img" src="images/Captura de pantalla de 2020-09-21 18-55-43.png" alt="Play videos">
+          </figure>
+        </button>
       </div>
-      <button class="arrow-right not-allowed" disabled>
+      <button class="arrow-right not-allowed" aria-label="carrousel button FORWARD" disabled>
         <i class="material-icons md-18">keyboard_arrow_right</i>
       </button>
     </section>
   </main>
   <footer>
-    <div class="contact" id="contact">
+    <div class="contact" id="contactForm">
       <center>
         <h1>Contact</h1>
+        <p>You can use the form to send me a message</p>
         <form action="" class="form">
           <label for="name">
             Your name:
-            <input id="name" type="text" name="name">
+            <input aria-label="name" id="name" type="text" name="name" required>
           </label>
           <label for="email">
             Your G-mail:
-            <input id="email" type="email" name="email">
+            <input aria-label="email" id="email" type="email" name="email" required>
           </label>
           <label for="content">
             Your message:
-            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            <textarea aria-label="your message" name="content" id="content" cols="30" rows="10" required></textarea>
+            <span id="error-form" aria-live="assertive"></span>
           </label>
           <input type="submit">
         </form>
