@@ -279,6 +279,7 @@ input[type="submit"] {
   padding: 25px;
   border-radius: 25px;
   position: relative;
+  overflow: auto;
   background-color: white;
 }
 

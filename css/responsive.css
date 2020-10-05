@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.content__figure--img {
+  width: 100%;
+}
+
 .modal-container img {
   max-width: 100%;
 }
