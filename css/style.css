@@ -299,6 +299,14 @@ input[type="submit"] {
   background-color: #d9d9d9;
 }
 
+.description-modal a {
+  text-decoration: underline;
+}
+
+.description-modal a:hover {
+  color: #a12700;
+}
+
 .contact {
   margin-top: 80px;
   padding: 15px;

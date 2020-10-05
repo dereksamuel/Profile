@@ -15,6 +15,8 @@ const $title = document.querySelector('#title');
 const $idTitle = document.getElementById('header-title');
 const $description = document.querySelector('.description-modal');
 const $link_a = document.querySelector('.link-a');
+const $link_1 = document.querySelector('#link-1');
+const $link_2 = document.querySelector('#link-2');
 
 // TO HERO
 const $wafe = document.querySelector('.hero__wafe');
@@ -92,8 +94,11 @@ $image.forEach(item => {
     $modalContainer.style = "display: inherit;";
     $title.textContent = imgByItem.alt;
     $img.setAttribute('src', imgByItem.currentSrc);
-    $description.textContent = e.toElement.dataset.desc;
     $link_a.setAttribute('href', e.toElement.dataset.link);
+    $link_1.setAttribute('href', e.toElement.dataset.link_1_url);
+    $link_2.setAttribute('href', e.toElement.dataset.link_2_url);
+    $link_1.textContent = e.toElement.dataset.link_1;
+    $link_2.textContent = e.toElement.dataset.link_2;
     $modal.classList.add('modal-active');
     $idTitle.focus();
   });
