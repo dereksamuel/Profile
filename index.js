@@ -49,7 +49,7 @@ $form.addEventListener('submit', e => {
   const content = e.target.content.value;
   if (content.length < 20) {
     showNotify(false);
-    return document.getElementById('error-form').innerHTML = "The content of the message must be higher than 20 words";
+    return document.getElementById('error-form').innerHTML = "El contenido de tu mensaje debe ser mayor a 20 palabras";
   } else {
     document.getElementById('error-form').innerHTML = "";
     showNotify(true);

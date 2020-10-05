@@ -15,9 +15,9 @@
   <header class="menu" id="menu">
     <nav class="menu__nav">
       <ul class="menu__nav--list">
-        <li class="menu__nav--list__item"><a href="#proyects">My proyects</a></li>
-        <li class="menu__nav--list__item"><a href="#aboutMe">About me</a></li>
-        <li class="menu__nav--list__item"><a href="#contactForm">Contact</a></li>
+        <li class="menu__nav--list__item"><a href="#proyects">Mis proyectos</a></li>
+        <li class="menu__nav--list__item"><a href="#aboutMe">Acerca de mí</a></li>
+        <li class="menu__nav--list__item"><a href="#contactForm">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="notify-me" aria-live="assertive">
-      <p>Very good! you have send your message successfully</p>
+      <p>Muy bien, tu mensaje a sido enviado</p>
     </div>
     <a href="#menu" class="return">
       <div class="material-icons">keyboard_arrow_up</div>
@@ -58,7 +58,7 @@
               <!-- <li class="hero__nav--list__item"><a href="#" title="G-mail"><i class="material-icons md-24">email</i></a></li> -->
               <li id="contact" class="hero__nav--list__item">
                 <i class="material-icons md-24">contact_phone</i>
-                <p>Number</p>
+                <p>Número</p>
               </li>
             </ul>
           </nav>
@@ -71,10 +71,10 @@
     </section>
     <section class="description" id="aboutMe">
       <article>
-        <p class="description--text">Hi! My name is Derek, I am full stack developer and I'm from Colombia. Since I knew the programming, I'v always had a fascination for make web apps.
-          I am looking for a part time schedule and I would like to offer these services. I am seventeen years old; I don't have experience for these topics, however I have good knowledge. Thanks for your atention.
+        <p class="description--text">
+          ¡Hola! Mi nombre es Derek, soy desarrollador full stack de Colombia. Desde que conocí la programación, me ha fascinado crear aplicaciones web. Estudio en Platzi online, donde me he certificado en dos carreras y alrededor de 51 cursos relacionados con JavaScript.
         </p>
-        <h2>ABOUT ME</h2>
+        <h2>Acerca de mí</h2>
       </article>
       <span class="description__icon">
         <i class="material-icons md-18">announcement</i>
@@ -85,6 +85,7 @@
         <i class="material-icons md-18">keyboard_arrow_left</i>
       </button>
       <div class="content">
+        <h1 style="position: absolute; left: 0; background-color: #3f5cb4; padding: 7px; color: #fff;">PROYECTOS:</h1>
         <!-- <div class="table">
           <span>
             MY PROYECTS
@@ -109,13 +110,17 @@
             <img class="content__figure--img" data-link="https://dereksamuel.github.io/SIMON-DICE/" src="images/simonDice.png" alt="Simón Dice" data-desc="Es un juego básico implementado con HTML 5, CSS 3 y con JS">
           </figure>
         </button>
-        <button class="unvisible" id="three" tabindex="-1">
-          <figure aria-hidden="false"  class="content__figure" id="4">
-            <img class="content__figure--img" src="images/RESCUE.png" alt="Rescue data base">
+        <button class="unvisible" id="three">
+          <figure aria-hidden="false" class="content__figure" id="3">
+            <img class="content__figure--img"
+              src="images/music-life.png"
+              alt="Music Life"
+              data-desc="Puedes listar tus aplicaciones favoritas en Spotify y escuchar un demo de estas"
+              data-link="https://music-life-3e089.web.app/">
           </figure>
         </button>
         <button class="unvisible" id="four" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="5">
+          <figure aria-hidden="false" class="content__figure" id="4">
             <img
               class="content__figure--img"
               src="images/invie.png"
@@ -135,7 +140,7 @@
           </figure>
         </button>
         <button class="unvisible" id="six" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="5">
+          <figure aria-hidden="false" class="content__figure" id="6">
             <img
               class="content__figure--img"
               src="images/hands.png"
@@ -145,7 +150,7 @@
           </figure>
         </button>
         <button class="unvisible" id="seven" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="5">
+          <figure aria-hidden="false" class="content__figure" id="7">
             <img
               class="content__figure--img"
               src="images/cats.png"
@@ -163,19 +168,19 @@
   <footer>
     <div class="contact" id="contactForm">
       <center>
-        <h1>Contact</h1>
-        <p>You can use the form to send me a message</p>
+        <h1>Contacto</h1>
+        <p>Puedes enviarme un mensaje con el sigiente formulario</p>
         <form action="" class="form">
           <label for="name">
-            Your name:
+            Tu nombre:
             <input aria-label="name" id="name" type="text" name="name" required>
           </label>
           <label for="email">
-            Your G-mail:
+            Tu G-mail:
             <input aria-label="email" id="email" type="email" name="email" required>
           </label>
           <label for="content">
-            Your message:
+            Tu mensage:
             <textarea aria-label="your message" name="content" id="content" cols="30" rows="10" required></textarea>
             <span id="error-form" aria-live="assertive"></span>
           </label>
