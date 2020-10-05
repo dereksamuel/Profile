@@ -93,6 +93,7 @@ $image.forEach(item => {
     const imgByItem = item.children[0].children[0];
     $modalContainer.style = "display: inherit;";
     $title.textContent = imgByItem.alt;
+    $description.textContent = e.toElement.dataset.desc;
     $img.setAttribute('src', imgByItem.currentSrc);
     $link_a.setAttribute('href', e.toElement.dataset.link);
     $link_1.setAttribute('href', e.toElement.dataset.link_1_url);
