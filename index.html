@@ -16,8 +16,7 @@
   <header class="menu" id="menu">
     <nav class="menu__nav">
       <ul class="menu__nav--list">
-        <li class="menu__nav--list__item"><a href="#proyects">Mis proyectos</a></li>
-        <li class="menu__nav--list__item"><a href="#aboutMe">Acerca de mí</a></li>
+        <li class="menu__nav--list__item"><a href="#proyects">Mis proyectos y Acerca de mí</a></li>
         <li class="menu__nav--list__item"><a href="#contactForm">Contacto</a></li>
       </ul>
     </nav>
@@ -75,114 +74,116 @@
         <img class="hero__wafe" src="images/Vector 1 (1).png" alt="vector 1">
       </center>
     </section>
-    <section class="description" id="aboutMe">
-      <article>
-        <p class="description--text">
-          ¡Hola! Mi nombre es Derek, soy desarrollador full stack de Colombia. Desde que conocí la programación, me ha fascinado crear aplicaciones web. Estudio en Platzi online, donde me he certificado en dos carreras y alrededor de 51 cursos relacionados con JavaScript.
-        </p>
-        <h2>Acerca de mí</h2>
-      </article>
-      <span class="description__icon">
-        <i class="material-icons md-18">announcement</i>
-      </span>
-    </section>
-    <section class="carrousel" id="proyects">
-      <button class="arrow-left not-allowed" aria-label="carrousel button - BACKGWARD">
-        <i class="material-icons md-18">keyboard_arrow_left</i>
-      </button>
-      <div class="content">
-        <h1 style="position: absolute; left: 0; background-color: #3f5cb4; padding: 7px; color: #fff;">PROYECTOS:</h1>
-        <!-- <div class="table">
-          <span>
-            MY PROYECTS
-            <div>
-              (Click me)
-            </div>
-          </span>
-        </div> -->
-        <button class="unvisible" id="one">
-          <figure class="content__figure">
-            <img class="content__figure--img"
-              src="images/Captura de pantalla de 2020-09-17 16-39-31.png"
-              alt="Google - clone"
-              data-link="https://dereksamuel.github.io/Google-Clone/"
-              data-desc="Un clone de Google con funcionalidades del mismo.
-              Fue hecho con las principales técnicas que usa google para la construcción de
-              su aplicación">
-          </figure>
+    <div class="container_two">
+      <section class="description" id="aboutMe">
+        <article>
+          <p class="description--text">
+            ¡Hola! Mi nombre es Derek, soy desarrollador full stack de Colombia. Desde que conocí la programación, me ha fascinado crear aplicaciones web. Estudio en Platzi online, donde me he certificado en dos carreras y alrededor de 51 cursos relacionados con JavaScript.
+          </p>
+          <h2>Acerca de mí</h2>
+        </article>
+        <span class="description__icon">
+          <i class="material-icons md-18">announcement</i>
+        </span>
+      </section>
+      <section class="carrousel" id="proyects">
+        <button class="arrow-left not-allowed" aria-label="carrousel button - BACKGWARD">
+          <i class="material-icons md-18">keyboard_arrow_left</i>
         </button>
-        <button class="unvisible" id="two">
-          <figure class="content__figure">
-            <img class="content__figure--img" data-link="https://dereksamuel.github.io/SIMON-DICE/" src="images/simonDice.png" alt="Simón Dice" data-desc="Es un juego básico implementado con HTML 5, CSS 3 y con JS">
-          </figure>
+        <div class="content">
+          <h1 style="position: absolute; left: 0; background-color: #3f5cb4; padding: 7px; color: #fff;">PROYECTOS:</h1>
+          <!-- <div class="table">
+            <span>
+              MY PROYECTS
+              <div>
+                (Click me)
+              </div>
+            </span>
+          </div> -->
+          <button class="unvisible" id="one">
+            <figure class="content__figure">
+              <img class="content__figure--img"
+                src="images/Captura de pantalla de 2020-09-17 16-39-31.png"
+                alt="Google - clone"
+                data-link="https://dereksamuel.github.io/Google-Clone/"
+                data-desc="Un clone de Google con funcionalidades del mismo.
+                Fue hecho con las principales técnicas que usa google para la construcción de
+                su aplicación">
+            </figure>
+          </button>
+          <button class="unvisible" id="two">
+            <figure class="content__figure">
+              <img class="content__figure--img" data-link="https://dereksamuel.github.io/SIMON-DICE/" src="images/simonDice.png" alt="Simón Dice" data-desc="Es un juego básico implementado con HTML 5, CSS 3 y con JS">
+            </figure>
+          </button>
+          <button class="unvisible" id="three">
+            <figure aria-hidden="false" class="content__figure" id="3">
+              <img class="content__figure--img"
+                src="images/music-life.png"
+                alt="Music Life"
+                data-desc="Puedes listar tus aplicaciones favoritas en Spotify y escuchar un demo de estas"
+                data-link="https://music-life-3e089.web.app/">
+            </figure>
+          </button>
+          <button class="unvisible" id="four" tabindex="-1">
+            <figure aria-hidden="false" class="content__figure" id="4">
+              <img
+                class="content__figure--img"
+                src="images/invie.png"
+                alt="Invie"
+                data-link="https://invie-aad48.web.app/"
+                data-desc="Con los siguientes easter eggs que podrá correr en el teclado, la página cambiará: invie, goback">
+            </figure>
+          </button>
+          <button class="unvisible" id="five" tabindex="-1">
+            <figure aria-hidden="false" class="content__figure" id="5">
+              <img
+                class="content__figure--img"
+                src="images/movies.png"
+                alt="Movi.es"
+                data-link="https://dereksamuel.github.io/Movi.es/"
+                data-desc="La siguiente aplicación implementa CSS grid a su máxima capacidad">
+            </figure>
+          </button>
+          <button class="unvisible" id="six" tabindex="-1">
+            <figure aria-hidden="false" class="content__figure" id="6">
+              <img
+                class="content__figure--img"
+                src="images/hands.png"
+                alt="Piedra papel o tijera"
+                data-link="https://dereksamuel.github.io/Piedra-Papel-o-Tijera/Juego/"
+                data-desc="Aquí se usó Math.random para poder jugar contra la computadora en un dueto">
+            </figure>
+          </button>
+          <button class="unvisible" id="seven" tabindex="-1">
+            <figure aria-hidden="false" class="content__figure" id="7">
+              <img
+                class="content__figure--img"
+                src="images/cats.png"
+                alt="Brand"
+                data-link="https://dereksamuel.github.io/Brand/proyect/pay.html"
+                data-desc="Se implementó una forma de pago con paypal en este layout">
+            </figure>
+          </button>
+          <button class="unvisible" id="eight" tabindex="-1">
+            <figure aria-hidden="false" class="content__figure" id="8">
+              <img
+                class="content__figure--img"
+                src="images/RESCUE.png"
+                alt="Otros Proyectos"
+                data-link="https://github.com/dereksamuel"
+                data-link_1="Platziverse"
+                data-link_1_url="https://github.com/dereksamuel/Platziverse-1"
+                data-link_2="GraphQL"
+                data-link_2_url="https://github.com/dereksamuel/GraphQL">
+            </figure>
+          </button>
+        </div>
+        <button class="arrow-right not-allowed" aria-label="carrousel button FORWARD">
+          <i class="material-icons md-18">keyboard_arrow_right</i>
         </button>
-        <button class="unvisible" id="three">
-          <figure aria-hidden="false" class="content__figure" id="3">
-            <img class="content__figure--img"
-              src="images/music-life.png"
-              alt="Music Life"
-              data-desc="Puedes listar tus aplicaciones favoritas en Spotify y escuchar un demo de estas"
-              data-link="https://music-life-3e089.web.app/">
-          </figure>
-        </button>
-        <button class="unvisible" id="four" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="4">
-            <img
-              class="content__figure--img"
-              src="images/invie.png"
-              alt="Invie"
-              data-link="https://invie-aad48.web.app/"
-              data-desc="Con los siguientes easter eggs que podrá correr en el teclado, la página cambiará: invie, goback">
-          </figure>
-        </button>
-        <button class="unvisible" id="five" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="5">
-            <img
-              class="content__figure--img"
-              src="images/movies.png"
-              alt="Movi.es"
-              data-link="https://dereksamuel.github.io/Movi.es/"
-              data-desc="La siguiente aplicación implementa CSS grid a su máxima capacidad">
-          </figure>
-        </button>
-        <button class="unvisible" id="six" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="6">
-            <img
-              class="content__figure--img"
-              src="images/hands.png"
-              alt="Piedra papel o tijera"
-              data-link="https://dereksamuel.github.io/Piedra-Papel-o-Tijera/Juego/"
-              data-desc="Aquí se usó Math.random para poder jugar contra la computadora en un dueto">
-          </figure>
-        </button>
-        <button class="unvisible" id="seven" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="7">
-            <img
-              class="content__figure--img"
-              src="images/cats.png"
-              alt="Brand"
-              data-link="https://dereksamuel.github.io/Brand/proyect/pay.html"
-              data-desc="Se implementó una forma de pago con paypal en este layout">
-          </figure>
-        </button>
-        <button class="unvisible" id="eight" tabindex="-1">
-          <figure aria-hidden="false" class="content__figure" id="8">
-            <img
-              class="content__figure--img"
-              src="images/RESCUE.png"
-              alt="Otros Proyectos"
-              data-link="https://github.com/dereksamuel"
-              data-link_1="Platziverse"
-              data-link_1_url="https://github.com/dereksamuel/Platziverse-1"
-              data-link_2="GraphQL"
-              data-link_2_url="https://github.com/dereksamuel/GraphQL">
-          </figure>
-        </button>
-      </div>
-      <button class="arrow-right not-allowed" aria-label="carrousel button FORWARD">
-        <i class="material-icons md-18">keyboard_arrow_right</i>
-      </button>
-    </section>
+      </section>
+    </div>
   </main>
   <footer>
     <div class="contact" id="contactForm">

@@ -107,7 +107,7 @@ input[type="submit"] {
   padding: 15px;
   background-color: var(--base-color);
   border-radius: 0px 25px 25px 0px;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .hero__nav--list {
@@ -157,7 +157,7 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(90% - 50%);
+  top: calc(100% - 50%);
   height: 85px;
   border-radius: 25px;
   font-weight: bold;
@@ -190,7 +190,7 @@ input[type="submit"] {
   right: -18px;
   height: 85px;
   z-index: 10;
-  top: calc(90% - 50%);
+  top: calc(100% - 50%);
   color: white;
   background-color: #111111;
   border: 2px solid white;
@@ -204,10 +204,15 @@ input[type="submit"] {
   background-color: #272727;
 }
 
+.container_two {
+  display: flex;
+  align-items: center;
+}
+
 .carrousel {
   position: relative;
-  max-width: 745px;
-  margin: 0 auto;
+  max-width: 55%;
+  margin: 0 50px;
 }
 
 .content {
